@@ -1,0 +1,32 @@
+customer:
+  name: Players
+  children:
+    upsert:
+      name: Create/Update player
+    delete:
+      name: Delete player
+    setting:
+      name: Player Settings
+    referral:
+      name: Referral
+
+customer rank:
+  name: Player Ranks
+  children:
+    upsert:
+      name: Create/Update player rank
+    delete:
+      name: Player rank
+
+customer kyc:
+  name: eKYC
+  children:
+    detail:
+      name: eKYC Details
+    approve:
+      name: Approve eKYC
+    reject:
+      name: Reject eKYC
+
+customer report referral:
+  name: Referral Reports

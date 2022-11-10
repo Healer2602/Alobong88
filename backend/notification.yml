@@ -1,0 +1,6 @@
+RESET_PASSWORD:
+  name: Staff - Forgot Password
+  params:
+    - user:name
+    - user:email
+    - reset_password_link

@@ -1,0 +1,7 @@
+matrix_api:
+  name: API Settings
+  description: API Settings
+  link: [ /matrix/setting ]
+  icon: fe fe-gitlab
+  weight: 50
+  permission: matrix setting

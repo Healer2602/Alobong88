@@ -1,0 +1,40 @@
+WITHDRAW_WITHDRAWN:
+  name: New Withdrawn
+  params:
+    - customer:name
+    - withdraw:amount
+    - withdraw:id
+    - withdraw:date
+    - withdraw:fee
+    - withdraw:received_amount
+    - withdraw:address
+    - withdraw:currency
+
+WITHDRAW_NEW:
+  name: New Withdrawal
+  params:
+    - customer:name
+    - withdraw:id
+    - withdraw:amount
+    - withdraw:date
+    - withdraw:fee
+    - withdraw:received_amount
+    - withdraw:address
+    - withdraw:currency
+
+WITHDRAW_REJECTED:
+  name: Withdrawal Rejected
+  params:
+    - customer:name
+    - withdraw:id
+    - withdraw:amount
+    - withdraw:date
+
+NEW_DEPOSIT:
+  name: New Deposit
+  params:
+    - deposit:id
+    - deposit:date
+    - deposit:amount
+    - deposit:received
+    - deposit:gateway

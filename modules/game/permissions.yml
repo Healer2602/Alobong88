@@ -1,0 +1,53 @@
+game:
+  name: Game
+  children:
+    upsert:
+      name: Create/Update Game
+    delete:
+      name: Delete Game
+
+game vendor:
+  name: Vendor
+  children:
+    upsert:
+      name: Create/Update Vendor
+    delete:
+      name: Delete Vendor
+
+game type:
+  name: Game Type
+  children:
+    upsert:
+      name: Create/Update Game Type
+    delete:
+      name: Delete Game Type
+
+game betlog:
+  name: Betting Summary
+
+game play:
+  name: Game Play History
+
+game vendor_content:
+  name: Game Vendor Content
+  children:
+    upsert:
+      name: Create/Update Game Vendor Content
+    delete:
+      name: Delete Game Vendor Content
+
+product_wallet:
+  name: Product Wallet Code
+  children:
+    upsert:
+      name: Create/Update Product Wallet
+    delete:
+      name: Delete Product Wallet
+
+betlog_provider:
+  name: Betlog Provider
+  children:
+    upsert:
+      name: Create/Update Betlog Provider
+    delete:
+      name: Delete Betlog Provider

@@ -1,0 +1,7 @@
+copay:
+  name: Copay
+  description: Copay gateway settings
+  permission: copay bank
+  icon: 'fe fe-briefcase'
+  weight: 50
+  link: [ '/copay/bank/index' ]

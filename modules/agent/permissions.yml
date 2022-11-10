@@ -1,0 +1,9 @@
+agent:
+  name: Agents
+  children:
+    details:
+      name: Details
+    delete:
+      name: Delete
+    plan:
+      name: Update Commission Plans

@@ -1,0 +1,29 @@
+wallet:
+  label: eWallet
+  permission: wallet
+  icon: 'las la-wallet'
+  weight: 20
+  children:
+    customer:
+      label: All Wallets
+      permission: wallet
+      link: '/wallet/default/index'
+    withdrawal:
+      label: Withdrawals
+      permission: wallet withdrawal
+      link: '/wallet/transaction/withdrawal'
+    transaction:
+      label: Transactions
+      permission: wallet transaction
+      link: '/wallet/transaction/index'
+
+
+report:
+  label: Reports
+  icon: 'fe fe-layers'
+  weight: 40
+  children:
+    transfers:
+      label: Wallet Transfers
+      permission: wallet transfer
+      link: '/wallet/transfer/index'

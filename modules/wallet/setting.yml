@@ -1,0 +1,31 @@
+wallet:
+  name: eWallets
+  description: eWallet Settings
+  link: [ /wallet/setting/index ]
+  icon: las la-wallet
+  weight: 40
+  permission: wallet setting
+
+withdraw_gateway:
+  name: Withdraw Gateways
+  description: Withdraw Gateways Management
+  icon: 'las la-hand-holding-usd'
+  weight: 45
+  link: [ '/wallet/withdraw-gateway' ]
+  permission: wallet_withdraw_gateway
+
+topup_gateway:
+  name: Deposit Gateways
+  description: Deposit Gateways Management
+  icon: 'las la-funnel-dollar'
+  weight: 45
+  link: [ '/wallet/topup-gateway' ]
+  permission: wallet_topup_gateway
+
+Bank:
+  name: Banks
+  description: Banks Management
+  link: [ /wallet/bank ]
+  icon: las la-credit-card
+  weight: 40
+  permission: wallet bank

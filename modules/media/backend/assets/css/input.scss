@@ -1,0 +1,125 @@
+.media-box {
+	.media-preview {
+		display: flex;
+		margin: 0 -.5rem 1rem;
+		flex-wrap: wrap;
+
+		&:empty {
+			display: none;
+		}
+
+		.media-item {
+			border: 1px solid var(--light);
+			display: flex;
+			align-items: center;
+			text-align: center;
+			padding: .4rem;
+			border-radius: 5px;
+			margin: .5rem;
+			justify-content: center;
+			background-color: white;
+			flex-wrap: wrap;
+
+			.file {
+				display: flex;
+				flex-direction: column;
+				height: 140px;
+				background-size: 100%;
+				width: 140px;
+				background-image: url(../img/icon_preview/default.png);
+
+				.type, .name {
+					background-color: rgba(0, 0, 0, 0.15);
+					padding: 2px 5px;
+					font-weight: bold;
+					font-size: .8rem;
+					color: white;
+				}
+
+				.name {
+					white-space: nowrap;
+					margin-top: auto;
+					overflow: hidden;
+					text-overflow: ellipsis
+				}
+
+				&.pptx, &.ppt {
+					background-image: url(../img/icon_preview/ppt.png);
+				}
+
+				&.xls, &.xlsx, &.csv {
+					background-image: url(../img/icon_preview/xls.png);
+				}
+
+				&.doc, &.docx, &.ttf {
+					background-image: url(../img/icon_preview/doc.png);
+				}
+
+				&.txt {
+					background-image: url(../img/icon_preview/txt.png);
+				}
+
+				&.zip, &.gz, &.tar {
+					background-image: url(../img/icon_preview/zip.png);
+				}
+
+				&.pdf {
+					background-image: url(../img/icon_preview/pdf.png);
+				}
+
+				&.image {
+					background-image: none;
+				}
+			}
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+}
+
+.media-dialog {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	outline: 0;
+
+	.modal-dialog {
+		max-width: 90vw;
+
+		.modal-body {
+			padding: 1rem;
+
+			iframe {
+				height: calc(100vh - 4rem - 100px);
+			}
+		}
+	}
+
+	&.show {
+		display: block;
+	}
+}
+
+.media-modal-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1060;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+
+	&.show {
+		opacity: .5;
+	}
+}

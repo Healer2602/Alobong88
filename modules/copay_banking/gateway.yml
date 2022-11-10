@@ -1,0 +1,10 @@
+id: copay_banking
+name: CoPay Bank Transfer
+model: modules\copay_banking\gateway\Copay
+form:
+  deposit:
+    view: "@modules/copay_banking/gateway/deposit.php"
+    model: modules\copay_banking\models\DepositForm
+  withdraw:
+    view: "@modules/copay_banking/gateway/withdraw.php"
+    model: modules\copay_banking\models\WithdrawForm

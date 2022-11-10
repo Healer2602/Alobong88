@@ -1,0 +1,5 @@
+setting website:
+  name: Website Setting
+
+setting htaccess:
+  name: Edit Htaccess File

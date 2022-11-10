@@ -1,0 +1,10 @@
+copay:
+  name: Copay
+
+copay bank:
+  name: Bank Management
+  children:
+    upsert:
+      name: Update/Create Bank
+    delete:
+      name: Delete Bank

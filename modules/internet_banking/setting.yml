@@ -1,0 +1,7 @@
+internet_banking:
+  name: Internet Banking
+  description: Internet Banking Bank Mgmt
+  permission: internet_banking bank
+  icon: 'fe fe-home'
+  weight: 50
+  link: [ '/internet_banking/bank/index' ]

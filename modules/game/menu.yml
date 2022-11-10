@@ -1,0 +1,38 @@
+game:
+  label: Games
+  permission: game
+  icon: 'fe fe-box'
+  weight: 50
+  children:
+    list:
+      label: All Games
+      permission: game
+      link: '/game/default/index'
+    vendor:
+      label: Vendors
+      permission: game vendor
+      link: '/game/vendor/index'
+    game_type:
+      label: Types
+      permission: game type
+      link: '/game/type/index'
+    vendor_content:
+      label: Vendor Content
+      permission: game vendor_content
+      icon: 'fe fe-archive'
+      weight: 60
+      link: '/game/vendor-content/index'
+
+report:
+  label: Reports
+  icon: 'fe fe-layers'
+  weight: 40
+  children:
+    betlog:
+      label: Betting Summary
+      permission: game betlog
+      link: '/game/report/betlog'
+    play:
+      label: Play History
+      permission: game play
+      link: '/game/report/play'

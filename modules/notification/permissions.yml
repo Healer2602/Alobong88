@@ -1,0 +1,15 @@
+notification:
+  name: Notification
+  children:
+    email_template:
+      name: Email Template
+    telegram:
+      name: Telegram Settings
+
+notification email_template:
+  name: Email Template
+  children:
+    upsert:
+      name: Create/Update Email Template
+    delete:
+      name: Delete Email Template

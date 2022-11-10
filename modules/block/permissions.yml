@@ -1,0 +1,7 @@
+block:
+  name: Blocks
+  children:
+    upsert:
+      name: Create/Update block
+    delete:
+      name: Delete block

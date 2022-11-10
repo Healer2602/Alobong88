@@ -1,0 +1,47 @@
+vi:
+  name: Tiếng Việt
+  source: vi
+
+en:
+  name: English
+  source: en
+
+ru:
+  name: Pусский
+  source: ru
+
+cn:
+  name: 中文
+  source: zh-CN
+
+fr:
+  name: Français
+  source: fr
+
+es:
+  name: Español
+  source: es
+
+de:
+  name: Deutsch
+  source: de
+
+id:
+  name: Bahasa Indonesia
+  source: id
+
+tw:
+  name: 繁體中文
+  source: zh-TW
+
+th:
+  name: ภาษาไทย
+  source: th
+
+km:
+  name: Khmer
+  source: km
+
+ms:
+  name: Malay
+  source: ms

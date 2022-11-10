@@ -1,0 +1,10 @@
+id: internet_banking
+name: "Internet Banking"
+model: modules\internet_banking\gateway\InternetBanking
+form:
+  deposit:
+    view: "@modules/internet_banking/gateway/deposit.php"
+    model: modules\internet_banking\models\DepositForm
+  withdraw:
+    view: "@modules/internet_banking/gateway/withdraw.php"
+    model: modules\internet_banking\models\WithdrawForm

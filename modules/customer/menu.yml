@@ -1,0 +1,22 @@
+customer:
+  label: Players
+  permission: customer
+  icon: 'fe fe-user'
+  weight: 50
+  children:
+    member:
+      label: All Players
+      permission: customer
+      link: '/customer/default/index'
+    rank:
+      label: Player Ranks
+      permission: customer rank
+      link: '/customer/rank/index'
+    kyc:
+      label: eKYC
+      permission: customer kyc
+      link: '/customer/kyc/index'
+    referral:
+      label: Referral
+      permission: customer referral
+      link: '/customer/referral/index'

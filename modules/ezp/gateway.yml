@@ -1,0 +1,11 @@
+id: ezp
+name: EEZIEPAY
+model: modules\ezp\gateway\Eeziepay
+address: https://www.yummyshop718.com/fundtransfer.php
+form:
+  deposit:
+    view: "@modules/ezp/gateway/deposit.php"
+    model: modules\ezp\models\DepositForm
+  withdraw:
+    view: "@modules/ezp/gateway/withdraw.php"
+    model: modules\ezp\models\WithdrawForm

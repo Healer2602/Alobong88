@@ -1,0 +1,10 @@
+id: copay
+name: CoPay Quick Pay
+model: modules\copay\gateway\Copay
+form:
+  deposit:
+    view: "@modules/copay/gateway/deposit.php"
+    model: modules\copay\models\DepositForm
+  withdraw:
+    view: "@modules/copay/gateway/withdraw.php"
+    model: modules\copay\models\WithdrawForm

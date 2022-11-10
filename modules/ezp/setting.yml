@@ -1,0 +1,7 @@
+eeziepay:
+  name: EeziePay
+  description: EeziePay gateway settings
+  permission: ezp bank
+  icon: 'fe fe-briefcase'
+  weight: 50
+  link: [ '/ezp/bank/index' ]

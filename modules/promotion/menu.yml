@@ -1,0 +1,14 @@
+promotion:
+  label: Promotions
+  permission: promotion
+  icon: 'fe fe-percent'
+  weight: 60
+  children:
+    list:
+      label: All Promotions
+      link: '/promotion/default/index'
+      permission: promotion
+    join:
+      label: Player Promo
+      link: '/promotion/default/players'
+      permission: promotion players

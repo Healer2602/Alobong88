@@ -1,0 +1,15 @@
+product_wallet:
+  name: Product Wallet Code
+  description: Product Wallet Code
+  link: [ /game/product-wallet/index ]
+  icon: fe fe-list
+  weight: 50
+  permission: product_wallet
+
+betlog_provider:
+  name: Betlog Providers
+  description: Betlog Providers
+  link: [ /game/betlog-provider/index ]
+  icon: fe fe-book
+  weight: 50
+  permission: betlog_provider

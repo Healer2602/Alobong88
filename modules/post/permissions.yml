@@ -1,0 +1,34 @@
+content:
+  name: Content
+
+post:
+  name: Posts
+  children:
+    upsert:
+      name: Create/Update post
+    delete:
+      name: Delete post
+
+post category:
+  name: Press Categories
+  children:
+    upsert:
+      name: Create/Update category
+    delete:
+      name: Delete category
+
+banner:
+  name: Banners
+  children:
+    upsert:
+      name: Create/Update banner
+    delete:
+      name: Delete banner
+
+information:
+  name: Information
+  children:
+    upsert:
+      name: Create/Update post
+    delete:
+      name: Delete post

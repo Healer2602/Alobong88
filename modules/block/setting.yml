@@ -1,0 +1,7 @@
+block:
+  name: Blocks
+  description: Block Management
+  link: [ /block/default/index ]
+  icon: fe fe-command
+  weight: 70
+  permission: block

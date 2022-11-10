@@ -1,0 +1,7 @@
+gmail:
+  name: Gmail API Setting
+  description: Settings for Gmail API
+  link: [ /gmail/setting/index ]
+  icon: fe fe-inbox
+  weight: 10
+  permission: setting gmail

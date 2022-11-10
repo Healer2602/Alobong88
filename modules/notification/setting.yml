@@ -1,0 +1,15 @@
+email-template:
+  name: Email Template
+  description: Email template management
+  link: [ /notification/email ]
+  icon: fe fe-mail
+  weight: 21
+  permission: notification email_template
+
+telegram:
+  name: Telegram
+  description: Telegram notification settings
+  link: [ /notification/telegram ]
+  icon: la la-telegram
+  weight: 22
+  permission: notification telegram

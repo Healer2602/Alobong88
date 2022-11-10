@@ -1,0 +1,17 @@
+game:
+  name: Game
+  validator: modules\game\importers\GameValidator
+  class: modules\game\importers\GameImporter
+  template: modules/game/importers/vendor_game.xlsx
+
+game_update:
+  name: Game Update
+  validator: modules\game\importers\GameValidator
+  class: modules\game\importers\GameUpdate
+  template: modules/game/importers/vendor_game_update.xlsx
+
+game_icon:
+  name: Game Import Image
+  validator: modules\game\importers\GameValidator
+  class: modules\game\importers\GameFile
+  template: modules/game/importers/game_file.zip

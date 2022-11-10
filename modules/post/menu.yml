@@ -1,0 +1,20 @@
+content:
+  label: Content
+  icon: 'fe fe-book-open'
+  weight: 60
+  permission: content
+  children:
+    blog:
+      label: Posts
+      permission: post
+      link: '/post/default/index'
+
+    information:
+      label: Information
+      permission: information
+      link: '/post/information/index'
+
+    banner:
+      label: Banners
+      permission: banner
+      link: '/post/banner/index'

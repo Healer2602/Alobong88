@@ -1,0 +1,11 @@
+media:
+  name: File Management
+  children:
+    delete_folder:
+      name: Delete Folder
+    rename_folder:
+      name: Rename Folder
+    rename_file:
+      name: Rename File
+    delete_file:
+      name: Delete File

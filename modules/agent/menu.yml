@@ -1,0 +1,6 @@
+agent:
+  label: Agents
+  permission: agent
+  icon: 'fe fe-share-2'
+  weight: 100
+  link: '/agent/default/index'

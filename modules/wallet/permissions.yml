@@ -1,0 +1,45 @@
+wallet:
+  name: eWallets
+  children:
+    detail:
+      name: eWallet Details
+    transaction:
+      name: Transaction Mgmt
+    transaction detail:
+      name: Transaction Details
+    transaction approve:
+      name: Approve Transaction
+    transaction return:
+      name: Refund
+    transaction update:
+      name: Update Transaction
+    setting:
+      name: eWallet Settings
+    withdrawal:
+      name: Withdrawals
+    transfer:
+      name: Transfer
+
+wallet_withdraw_gateway:
+  name: Withdraw Gateways
+  children:
+    upsert:
+      name: Create/Update Withdraw Gateway
+    delete:
+      name: Delete Withdraw Gateway
+
+wallet_topup_gateway:
+  name: Deposit Gateways
+  children:
+    upsert:
+      name: Create/Update Deposit Gateway
+    delete:
+      name: Delete Deposit Gateway
+
+wallet bank:
+  name: Bank Management
+  children:
+    upsert:
+      name: Create/Update Bank
+    delete:
+      name: Delete Bank

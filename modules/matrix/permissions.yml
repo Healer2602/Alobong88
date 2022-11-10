@@ -1,0 +1,29 @@
+customer:
+  name: Khách hàng
+  children:
+    upsert:
+      name: Create/Update khách hàng
+    delete:
+      name: Xóa khách hàng
+    setting:
+      name: Cài đặt cho khách hàng
+    social-login:
+      name: Cài đặt Social Login
+
+customer rank:
+  name: Nhóm khách hàng
+  children:
+    upsert:
+      name: Create/Update nhóm khách hàng
+    delete:
+      name: Xóa nhóm khách hàng
+
+customer kyc:
+  name: KYC
+  children:
+    detail:
+      name: Chi tiết KYC
+    approve:
+      name: Chấp nhận KYC
+    reject:
+      name: Từ chối KYC

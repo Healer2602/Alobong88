@@ -1,0 +1,6 @@
+media_center:
+  label: Media Center
+  permission: media_center
+  icon: 'fe fe-bookmark'
+  weight: 50
+  link: '/media_center/default/index'

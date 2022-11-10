@@ -1,0 +1,15 @@
+clear-cache:
+  name: Clear cache
+  description: Clear system cache
+  link: [ /setting/clear-cache ]
+  icon: fe fe-zap-off
+  weight: 1000
+  permission: setting
+
+language:
+  name: Languages
+  description: Language Management
+  link: [ /language/index ]
+  icon: las la-language
+  weight: 800
+  permission: language

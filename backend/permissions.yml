@@ -1,0 +1,40 @@
+user:
+  name: Staffs
+  children:
+    upsert:
+      name: Create/Update Staff
+    delete:
+      name: Delete Staff
+
+role:
+  name: Staff Roles
+  children:
+    upsert:
+      name: Create/update staff roles
+    delete:
+      name: Delete staff role
+    access_control:
+      name: Access Control
+
+setting:
+  name: Settings
+
+language:
+  name: Language Mgmt
+  children:
+    upsert:
+      name: Create/update language
+    delete:
+      name: Delete language
+
+system:
+  name: System
+  children:
+    logs:
+      name: Audit Trails
+
+system logs:
+  name: Audit Trails
+  children:
+    export:
+      name: Export Audit Trails

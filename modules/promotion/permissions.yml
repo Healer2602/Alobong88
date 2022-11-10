@@ -1,0 +1,11 @@
+promotion:
+  name: Promotion
+  children:
+    upsert:
+      name: Create/Update Promotion
+    delete:
+      name: Delete Promotion
+    players:
+      name: Player Promotions
+    cancel:
+      name: Cancel player promotion

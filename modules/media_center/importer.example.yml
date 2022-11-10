@@ -1,0 +1,4 @@
+example:
+  name: Example Importer
+  validator: modules\media_center\ExampleValidator
+  class: modules\media_center\ExampleImporter

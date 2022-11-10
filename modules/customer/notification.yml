@@ -1,0 +1,53 @@
+NEW_CUSTOMER:
+  name: New Player
+  params:
+    - player:name
+    - player:username
+    - player:email
+    - site:name
+    - site:url
+
+RESET_PASSWORD:
+  name: Forgot Password
+  params:
+    - user:name
+    - user:email
+    - site:name
+    - site:url
+    - reset_password_link
+
+SUBMIT_NOTIFY_KYC:
+  name: New eKYC
+  params:
+    - user:name
+    - user:email
+    - site:name
+    - site:url
+
+APPROVE_KYC:
+  name: Approve eKYC
+  params:
+    - user:name
+    - user:email
+    - site:name
+    - site:url
+
+REJECT_KYC:
+  name: Reject eKYC
+  params:
+    - user:name
+    - user:email
+    - reject:message
+    - site:name
+    - site:url
+
+PLAYER_VERIFY_EMAIL:
+  name: "[Player] Verify Email Address"
+  params:
+    - player:name
+    - player:email
+    - player:phone
+    - verification:code
+    - verification:link
+    - site:name
+    - site:url

@@ -1,0 +1,147 @@
+span.multiselect-native-select {
+    position: relative;
+    display: block;
+
+    select {
+        border: 0 !important;
+        clip: rect(0 0 0 0) !important;
+        height: 1px !important;
+        margin: -1px -1px -1px -3px !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        position: absolute !important;
+        width: 1px !important;
+        left: 50%;
+        top: 30px;
+    }
+
+    ~ .invalid-feedback:not(:empty) {
+        display: block;
+    }
+
+    .btn-group {
+        display: flex;
+
+        .btn {
+            body.darkmode & {
+                color: #999;
+                background-color: #313235;
+                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .6), 0 1px 3px 1px rgba(0, 0, 0, .3);
+                border: none;
+            }
+
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+.multiselect-container {
+    list-style-type: none;
+    width: 100%;
+
+    .input-group {
+        margin: 5px;
+    }
+
+    .multiselect-reset .input-group {
+        width: 93%;
+    }
+
+    > li {
+
+        > a.multiselect-all label {
+            font-weight: 700;
+        }
+
+        &.multiselect-group label {
+            margin: 0;
+            padding: 3px 20px;
+            height: 100%;
+            font-weight: 700;
+        }
+
+        &.multiselect-group-clickable label {
+            cursor: pointer;
+        }
+
+        > a {
+            padding: 0;
+            display: block;
+
+            > label {
+                cursor: pointer;
+                font-weight: 400;
+                position: relative;
+                padding-left: 1.5rem;
+                display: block;
+                margin-bottom: 0;
+
+                input {
+                    position: absolute;
+                    z-index: -1;
+                    opacity: 0;
+                }
+
+                &::before {
+                    position: absolute;
+                    top: .25rem;
+                    left: 0;
+                    display: block;
+                    width: 1rem;
+                    height: 1rem;
+                    pointer-events: none;
+                    content: "";
+                    background-color: #fff;
+                    border: #adb5bd solid 1px;
+                    border-radius: .25rem;
+                }
+
+                &::after {
+                    position: absolute;
+                    top: .25rem;
+                    left: 0;
+                    display: block;
+                    width: 1rem;
+                    height: 1rem;
+                    content: "";
+                    background: no-repeat 50%/50% 50%;
+                }
+            }
+        }
+
+        &.active > a > label {
+            &::before {
+                color: #fff;
+                border-color: #007bff;
+                background-color: #007bff;
+            }
+
+            &::after {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+            }
+        }
+    }
+}
+
+.btn-group > .btn-group:nth-child(2) > .multiselect.btn {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.form-inline .multiselect-container {
+    label {
+        &.checkbox, &.radio {
+            padding: 3px 20px 3px 40px;
+        }
+    }
+
+    li a label {
+        &.checkbox input[type=checkbox], &.radio input[type=radio] {
+            margin-left: -20px;
+            margin-right: 0;
+        }
+    }
+}

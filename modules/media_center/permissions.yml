@@ -1,0 +1,9 @@
+media_center:
+  name: Media Center
+  children:
+    download_error_log:
+      name: Download Error Log
+    view:
+      name: View import log
+    import:
+      name: Import Data

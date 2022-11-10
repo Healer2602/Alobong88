@@ -1,0 +1,27 @@
+AGENT_APPROVE:
+  name: "[Agent] Approve Registration"
+  params:
+    - agent:name
+    - agent:email
+    - agent:code
+    - agent:url
+    - site:name
+    - site:url
+
+AGENT_REJECT:
+  name: "[Agent] Reject Registration"
+  params:
+    - agent:name
+    - agent:email
+    - agent:code
+    - site:name
+    - site:url
+
+AGENT_BLOCK:
+  name: "[Agent] Block Registration"
+  params:
+    - agent:name
+    - agent:email
+    - agent:code
+    - site:name
+    - site:url

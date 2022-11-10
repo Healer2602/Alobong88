@@ -1,0 +1,7 @@
+agent:
+  name: Agent Settings
+  description: Agent Commission Plans
+  link: [ /agent/setting/index ]
+  icon: fe fe-share-2
+  weight: 60
+  permission: agent plan

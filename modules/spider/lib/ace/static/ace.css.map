@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "mappings": "AAAA,WAAY,CACR,MAAM,CAAE,KAAK",
+  "sources": [
+    "ace.scss"
+  ],
+  "names": [],
+  "file": "ace.css"
+}

@@ -1,0 +1,15 @@
+customer:
+  name: Players
+  description: Player Settings
+  link: [ /customer/setting ]
+  icon: las la-user
+  weight: 50
+  permission: customer setting
+
+customer_login:
+  name: Social Login
+  description: Social Login Settings
+  link: [ /customer/setting/social-login ]
+  icon: las la-sign-in-alt
+  weight: 51
+  permission: customer social-login

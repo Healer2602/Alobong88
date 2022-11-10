@@ -1,0 +1,10 @@
+internet_banking:
+  name: Internet Banking
+
+internet_banking bank:
+  name: Internet Banking Banks
+  children:
+    upsert:
+      name: Add/Update Bank
+    delete:
+      name: Delete Bank
