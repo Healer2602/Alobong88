@@ -13,3 +13,11 @@ htaccess:
   icon: fe fe-file-text
   weight: 900
   permission: setting htaccess
+
+menu:
+  name: Menu Setting
+  description: Management menu
+  link: [ /website/menu ]
+  icon: fe fe-list
+  weight: 1000
+  permission: menu

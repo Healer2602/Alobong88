@@ -10,18 +10,17 @@ use yii\bootstrap5\Html;
 $asset = AppAsset::register($this);
 ?>
 
-<section class="py-4">
-	<div class="bordered-heading">
-		<h2 class="heading text-largest icon">
-			<img src="<?= $asset->baseUrl ?>/img/icons/cup-icon.png" alt="">
+<section class="py-5 bg-grey">
+	<div class="container">
+		<h3 class="heading-lg text-uppercase text-secondary">
 			<?= Yii::t('game', 'Partners') ?>
-		</h2>
+		</h3>
+		<ul class="list-unstyled list-partner">
+			<?php foreach ($data as $item){
+				echo Html::beginTag('li');
+				echo Html::a(Html::img($item->icon, ['alt' => '']), 'javascript:');
+				echo Html::endTag('li');
+			} ?>
+		</ul>
 	</div>
-	<ul class="list-unstyled list-partner">
-		<?php foreach ($data as $item){
-			echo Html::beginTag('li');
-			echo Html::a(Html::img($item->icon, ['alt' => '']), 'javascript:');
-			echo Html::endTag('li');
-		} ?>
-	</ul>
 </section>

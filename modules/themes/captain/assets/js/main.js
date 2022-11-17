@@ -4,13 +4,23 @@
 	var fn = {
 		Slick: function () {
 			$('.slider').slick({
-				slidesToShow: 5,
+				slidesToShow: 3,
 				slidesToScroll: 1,
 				arrows: true,
 				cssEase: 'ease',
 				edgeFriction: 0.5,
 				speed: 500,
 				infinite: true,
+				responsive: [
+					{
+						breakpoint: 991,
+						settings: {
+							slidesToShow: 1,
+							arrows: false,
+							dots: true
+						},
+					},
+				],
 			});
 		},
 
@@ -140,7 +150,26 @@
 				hide_item.show();
 				$(this).hide();
 			});
-		}
+		},
+
+		MMenu: function () {
+			var imgFullURL = $('.navbar-brand img')[0].src;
+
+			$("#menu-top-menu").mmenu({
+				navbars: [
+					{
+						content: ["<div><img src=" + imgFullURL + "></div>"]
+					}
+				],
+			}, {
+				offCanvas: {
+					clone: true,
+					page: {
+						selector: "#page"
+					}
+				}
+			});
+		},
 	};
 
 	$(document).ready(function () {
@@ -165,6 +194,7 @@
 		fn.PreviewImage();
 		fn.FlatPickr();
 		fn.ShowMore();
+		fn.MMenu();
 
 		if ($(window).width() < 991) {
 			fn.MenuLeft();

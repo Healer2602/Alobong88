@@ -3,3 +3,6 @@ setting website:
 
 setting htaccess:
   name: Edit Htaccess File
+
+menu:
+  name: Menu

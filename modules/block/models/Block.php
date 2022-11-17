@@ -15,6 +15,7 @@ use yii\helpers\Json;
  * @property string $name
  * @property string $title
  * @property string $content
+ * @property string $image
  * @property string|array $setting
  * @property string $type
  * @property string $position
@@ -52,7 +53,7 @@ class Block extends BaseActiveRecord{
 		return [
 			[['name'], 'required'],
 			[['content', 'language'], 'string'],
-			[['setting'], 'safe'],
+			[['setting', 'image'], 'safe'],
 			[['ordering', 'status', 'created_by', 'created_at', 'updated_by', 'updated_at'], 'integer'],
 			[['name', 'title', 'type', 'position'], 'string', 'max' => 255],
 			['ordering', 'default', 'value' => 1]

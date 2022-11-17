@@ -3,6 +3,7 @@
 namespace modules\themes\captain;
 
 use modules\spider\lib\lineawesome\Asset;
+use modules\spider\lib\mmenu\MmenuAsset;
 use modules\spider\lib\select2\FullAsset;
 use yii\bootstrap5\BootstrapPluginAsset;
 use yii\web\AssetBundle;
@@ -31,6 +32,7 @@ class AppAsset extends AssetBundle{
 		FullAsset::class,
 		\modules\spider\lib\flatpickr\Asset::class,
 		\modules\spider\lib\slick\Asset::class,
+		MmenuAsset::class,
 	];
 
 	public $publishOptions = [

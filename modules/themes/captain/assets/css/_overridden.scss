@@ -545,6 +545,10 @@ form {
 	color: $third_color !important;
 }
 
+.text-secondary {
+	color: #001933 !important;
+}
+
 .bg-primary {
 	background-color: $third_color !important;
 }
@@ -571,6 +575,13 @@ form {
 	@include mobile {
 		font-size: 22px;
 	}
+}
+
+.heading-lg {
+	font-weight: $font-weight-bold;
+	font-size: 30px;
+	line-height: 20px;
+	margin-bottom: 24px;
 }
 
 .icon-check {
@@ -616,4 +627,9 @@ span.select2-container {
 	@include mobile {
 		white-space: normal !important;
 	}
+}
+
+.image-rounded {
+	border-radius: 0.85rem;
+	overflow: hidden;
 }

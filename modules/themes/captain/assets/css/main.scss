@@ -18,7 +18,6 @@ body {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	background-color: #F6F8FE;
 }
 
 a {
@@ -31,6 +30,18 @@ a {
 
 	.default-bg &:hover {
 		color: darken($primary_color, 10%);
+	}
+}
+
+.page {
+	&.customer-page, .bg-grey {
+		background-color: #F6F8FE;
+	}
+
+	&.customer-page {
+		.default-bg {
+			padding: 1rem 0 2rem;
+		}
 	}
 }
 
@@ -318,8 +329,6 @@ main.main {
 	}
 
 	.default-bg {
-		padding: 1rem 0 2rem;
-
 		&.fishing-place {
 			background-image: url("../img/fish-bg.jpg");
 			background-size: 100%;
@@ -668,8 +677,8 @@ main.main {
 
 			&:hover {
 				img {
-					filter: invert(8%) sepia(100%) saturate(7147%) hue-rotate(14deg) brightness(91%) contrast(116%);
-					-webkit-filter: invert(8%) sepia(100%) saturate(7147%) hue-rotate(14deg) brightness(91%) contrast(116%);
+					filter: invert(69%) sepia(89%) saturate(397%) hue-rotate(5deg) brightness(100%) contrast(93%);
+					-webkit-filter: invert(69%) sepia(89%) saturate(397%) hue-rotate(5deg) brightness(100%) contrast(93%);
 				}
 			}
 		}
@@ -786,7 +795,7 @@ footer.main {
 
 	&:hover {
 		opacity: .9;
-		transform: scale(1.05);
+		transform: scale(1.02);
 	}
 }
 

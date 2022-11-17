@@ -1,0 +1,88 @@
+.slider {
+	&.custom {
+		.slick-list {
+			margin: 0 -0.8rem;
+
+			.slick-slide > div {
+				margin: 0 0.8rem;
+				position: relative;
+			}
+		}
+
+		.slick-arrow {
+			width: 1.5rem;
+			height: 1.5rem;
+			border: 1px solid #66B0FF;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			&:hover {
+				border-color: $third_color;
+			}
+
+			&:before {
+				font-size: 0.8rem;
+			}
+
+			@include large_desktop {
+				top: -2rem;
+				color: #66B0FF;
+
+				&.slick-prev {
+					left: initial;
+					right: 3rem;
+				}
+			}
+		}
+	}
+
+	.slick-dots {
+		list-style-type: none;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		font-size: 0;
+		position: relative;
+		z-index: 100;
+		@include moblet {
+			order: -1;
+			margin-bottom: 1rem;
+		}
+
+		li {
+			&:focus-visible {
+				outline: 0;
+			}
+
+			&.slick-active {
+				button {
+					background-color: $primary_color;
+				}
+			}
+
+			button {
+				font-size: 0;
+				color: #2C2C2C;
+
+				@include moblet {
+					border-radius: 2.57rem;
+				}
+			}
+		}
+
+		button {
+			background-color: #7CBBE9;
+			border: 0;
+			height: 0.5rem;
+			width: 2rem;
+			border-radius: 0.5rem;
+			margin: 1rem 0.5rem 0;
+
+			&:focus-visible {
+				outline: 0;
+			}
+		}
+	}
+}

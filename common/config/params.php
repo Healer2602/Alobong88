@@ -15,6 +15,10 @@ $params = [
 		'length' => 6
 	],
 
+	'menu.positions' => [
+		'top-menu' => 'Top Menu',
+	],
+
 	'deployments' => []
 ];
 

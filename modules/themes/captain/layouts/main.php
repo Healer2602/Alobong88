@@ -9,6 +9,7 @@ use common\models\Language;
 use frontend\widgets\Footer;
 use modules\customer\widgets\Customer;
 use modules\themes\captain\AppAsset;
+use modules\website\widgets\NavMenu;
 use yii\bootstrap5\Html;
 use yii\bootstrap5\Modal;
 use yii\helpers\Url;
@@ -83,7 +84,15 @@ $asset = AppAsset::register($this);
 						</ul>
 					</div>
 				<?php endif; ?>
+				<div class="media-menu">
+					<a href="#menu-top-menu"><i class="la la-bars" aria-hidden="true"></i></a>
+				</div>
 			</nav>
+		</div>
+		<div class="top-menu" id="top-menu" data-title="<?= Yii::t('common','Menu') ?>">
+			<div class="container">
+				<?= NavMenu::widget(['position' => 'top-menu']) ?>
+			</div>
 		</div>
 	</header>
 
@@ -96,6 +105,8 @@ $asset = AppAsset::register($this);
 			<?= Footer::widget() ?>
 		</div>
 	</footer>
+
+	<div id="page"></div>
 
 	<?php Modal::begin([
 		'id'            => 'global-modal',
