@@ -29,7 +29,7 @@
     "creocoder/yii2-nested-sets": "^0.9.0",
 	"yiisoft/yii2-httpclient": "~2.0.0",
 	"yiisoft/yii2-queue": "^2.3",
-	"yiisoft/yii2-bootstrap5": "~2.0.0",
+	"yiisoft/yii2-bootstrap5": "2.0.3",
 	"yiisoft/yii2-authclient": "~2.2.0",
 	"google/apiclient": "^2.6",
 	"ext-fileinfo": "*",
