@@ -13,6 +13,7 @@ use yii\bootstrap5\Alert;
 use yii\bootstrap5\Nav;
 
 $asset = AppAsset::register($this);
+$this->params['bodyClasses'] = 'page customer-page'
 ?>
 
 <?= $this->render('_header') ?>
@@ -49,7 +50,7 @@ $asset = AppAsset::register($this);
 					'options'     => ['class' => 'form-login-register'],
 					'action'      => ['/customer/default/register'],
 					'fieldConfig' => [
-						'options' => ['class' => 'mb-3 px-3']
+						'options' => ['class' => 'mb-3']
 					]
 				]); ?>
 

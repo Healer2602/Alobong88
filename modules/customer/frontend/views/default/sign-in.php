@@ -14,6 +14,7 @@ use yii\bootstrap5\Html;
 use yii\bootstrap5\Nav;
 
 $asset = AppAsset::register($this);
+$this->params['bodyClasses'] = 'page customer-page'
 ?>
 
 <?= $this->render('_header') ?>
@@ -41,7 +42,7 @@ $asset = AppAsset::register($this);
 					'options'     => ['class' => 'form-login-register'],
 					'action'      => ['/customer/default/sign-in'],
 					'fieldConfig' => [
-						'options' => ['class' => 'mb-3 px-3']
+						'options' => ['class' => 'mb-3']
 					]
 				]); ?>
 
