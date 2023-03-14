@@ -1,1 +1,106 @@
-.media-box .media-preview{display:flex;margin:0 -0.5rem 1rem;flex-wrap:wrap}.media-box .media-preview:empty{display:none}.media-box .media-preview .media-item{border:1px solid var(--light);display:flex;align-items:center;text-align:center;padding:.4rem;border-radius:5px;margin:.5rem;justify-content:center;background-color:#fff;flex-wrap:wrap}.media-box .media-preview .media-item .file{display:flex;flex-direction:column;height:140px;background-size:100%;width:140px;background-image:url(../img/icon_preview/default.png)}.media-box .media-preview .media-item .file .type,.media-box .media-preview .media-item .file .name{background-color:rgba(0,0,0,.15);padding:2px 5px;font-weight:bold;font-size:.8rem;color:#fff}.media-box .media-preview .media-item .file .name{white-space:nowrap;margin-top:auto;overflow:hidden;text-overflow:ellipsis}.media-box .media-preview .media-item .file.pptx,.media-box .media-preview .media-item .file.ppt{background-image:url(../img/icon_preview/ppt.png)}.media-box .media-preview .media-item .file.xls,.media-box .media-preview .media-item .file.xlsx,.media-box .media-preview .media-item .file.csv{background-image:url(../img/icon_preview/xls.png)}.media-box .media-preview .media-item .file.doc,.media-box .media-preview .media-item .file.docx,.media-box .media-preview .media-item .file.ttf{background-image:url(../img/icon_preview/doc.png)}.media-box .media-preview .media-item .file.txt{background-image:url(../img/icon_preview/txt.png)}.media-box .media-preview .media-item .file.zip,.media-box .media-preview .media-item .file.gz,.media-box .media-preview .media-item .file.tar{background-image:url(../img/icon_preview/zip.png)}.media-box .media-preview .media-item .file.pdf{background-image:url(../img/icon_preview/pdf.png)}.media-box .media-preview .media-item .file.image{background-image:none}.media-box .media-preview img{width:100%;height:100%;object-fit:contain}.media-dialog{position:fixed;top:0;left:0;z-index:2000;display:none;width:100%;height:100%;overflow-x:hidden;overflow-y:auto;outline:0}.media-dialog .modal-dialog{max-width:90vw}.media-dialog .modal-dialog .modal-body{padding:1rem}.media-dialog .modal-dialog .modal-body iframe{height:calc(100vh - 4rem - 100px)}.media-dialog.show{display:block}.media-modal-backdrop{position:fixed;top:0;left:0;z-index:1060;width:100vw;height:100vh;background-color:#000}.media-modal-backdrop.show{opacity:.5}/*# sourceMappingURL=input.css.map */
+.media-box .media-preview {
+  display: flex;
+  margin: 0 -0.5rem 1rem;
+  flex-wrap: wrap;
+}
+.media-box .media-preview:empty {
+  display: none;
+}
+.media-box .media-preview .media-item {
+  border: 1px solid var(--light);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0.4rem;
+  border-radius: 5px;
+  margin: 0.5rem;
+  justify-content: center;
+  background-color: white;
+  flex-wrap: wrap;
+}
+.media-box .media-preview .media-item .file {
+  display: flex;
+  flex-direction: column;
+  height: 140px;
+  background-size: 100%;
+  width: 140px;
+  background-image: url(../img/icon_preview/default.png);
+}
+.media-box .media-preview .media-item .file .type, .media-box .media-preview .media-item .file .name {
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 2px 5px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: white;
+}
+.media-box .media-preview .media-item .file .name {
+  white-space: nowrap;
+  margin-top: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.media-box .media-preview .media-item .file.pptx, .media-box .media-preview .media-item .file.ppt {
+  background-image: url(../img/icon_preview/ppt.png);
+}
+.media-box .media-preview .media-item .file.xls, .media-box .media-preview .media-item .file.xlsx, .media-box .media-preview .media-item .file.csv {
+  background-image: url(../img/icon_preview/xls.png);
+}
+.media-box .media-preview .media-item .file.doc, .media-box .media-preview .media-item .file.docx, .media-box .media-preview .media-item .file.ttf {
+  background-image: url(../img/icon_preview/doc.png);
+}
+.media-box .media-preview .media-item .file.txt {
+  background-image: url(../img/icon_preview/txt.png);
+}
+.media-box .media-preview .media-item .file.zip, .media-box .media-preview .media-item .file.gz, .media-box .media-preview .media-item .file.tar {
+  background-image: url(../img/icon_preview/zip.png);
+}
+.media-box .media-preview .media-item .file.pdf {
+  background-image: url(../img/icon_preview/pdf.png);
+}
+.media-box .media-preview .media-item .file.image {
+  background-image: none;
+}
+.media-box .media-preview img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.media-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+.media-dialog .modal-dialog {
+  max-width: 90vw;
+}
+.media-dialog .modal-dialog .modal-body {
+  padding: 1rem;
+}
+.media-dialog .modal-dialog .modal-body iframe {
+  height: calc(100vh - 4rem - 100px);
+}
+.media-dialog.show {
+  display: block;
+}
+
+.media-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+.media-modal-backdrop.show {
+  opacity: 0.5;
+}/*# sourceMappingURL=input.css.map */

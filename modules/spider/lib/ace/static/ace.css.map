@@ -1,9 +1,1 @@
-{
-  "version": 3,
-  "mappings": "AAAA,WAAY,CACR,MAAM,CAAE,KAAK",
-  "sources": [
-    "ace.scss"
-  ],
-  "names": [],
-  "file": "ace.css"
-}
+{"version":3,"sources":["ace.scss","ace.css"],"names":[],"mappings":"AAAA;EACC,aAAA;ACCD","file":"ace.css"}

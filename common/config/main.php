@@ -41,13 +41,13 @@ $config = [
 			'decimalSeparator'         => '.',
 			'thousandSeparator'        => ',',
 			'currencyDecimalSeparator' => '.',
-			'numberFormatterSymbols'   => [
-				NumberFormatter::CURRENCY_SYMBOL => 'đ',
-			],
-			'numberFormatterOptions'   => [
-				NumberFormatter::MIN_FRACTION_DIGITS => 0,
-				NumberFormatter::MAX_FRACTION_DIGITS => 0,
-			]
+			// 'numberFormatterSymbols'   => [
+			// 	NumberFormatter::CURRENCY_SYMBOL => 'đ',
+			// ],
+			// 'numberFormatterOptions'   => [
+			// 	NumberFormatter::MIN_FRACTION_DIGITS => 0,
+			// 	NumberFormatter::MAX_FRACTION_DIGITS => 0,
+			// ]
 		],
 		'i18n'        => [
 			'translations' => [

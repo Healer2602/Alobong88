@@ -91,12 +91,12 @@ input.form-control, select.form-select {
 	}
 
 	&.btn-primary {
-		background: linear-gradient(21.67deg, #FFD800 17.01%, #FEF3B4 88.21%);
+		background: linear-gradient(21.67deg, #d1ae52.01%, #FEF3B4 88.21%);
 		border-color: transparent;
-		color: $primary_color;
+		color: #fff;
 
 		&:hover, &:active, &:focus {
-			background: $third_color;
+			background: #d1ae52;
 			color: white;
 		}
 	}
@@ -122,11 +122,11 @@ input.form-control, select.form-select {
 	}
 
 	&.btn-outline-primary {
-		border-color: $third_color;
-		color: $third_color;
+		border-color: #d1ae52;
+		color: #d1ae52;
 
 		&:hover, &:active, &:focus {
-			background-color: $third_color;
+			background-color: #d1ae52;
 			color: white;
 		}
 	}
@@ -546,7 +546,7 @@ form {
 }
 
 .text-secondary {
-	color: #001933 !important;
+	color: #ddc06b !important;
 }
 
 .bg-primary {

@@ -1,3 +1,8 @@
-.card-filter {min-height: 60px;height: auto !important;padding-bottom: 0 !important}
-.card-filter .wallet-filter {margin-bottom: 0 !important}
-/*# sourceMappingURL=style.css.map */
+.card-filter {
+  min-height: 60px;
+  height: auto !important;
+  padding-bottom: 0 !important;
+}
+.card-filter .wallet-filter {
+  margin-bottom: 0 !important;
+}/*# sourceMappingURL=style.css.map */

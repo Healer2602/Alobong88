@@ -1,5 +1,5 @@
 .top-menu {
-	background-color: #003166;
+	background-color: #7f1312;
 
 	.media-menu {
 		display: none;
@@ -32,7 +32,11 @@
 
 				span {
 					display: block;
-					color: #48658C;
+					color: #ffffff;
+				}
+				img{
+					filter: invert(69%) sepia(89%) saturate(397%) hue-rotate(356deg) brightness(10%) contrast(93%);;
+    				-webkit-filter: invert(69%) sepia(89%) saturate(397%) hue-rotate(356deg) brightness(10%) contrast(93%);;
 				}
 			}
 		}
@@ -41,13 +45,14 @@
 
 .menu-custom {
 	.item {
-		background-color: white;
-		padding: 2.8rem 1rem 2.8rem 5rem;
+		background-color: #7f1312;
+		padding: 2rem 1rem 2.8rem 4rem;
 		position: relative;
 		box-shadow: 0 5px 5px -2px rgba(206, 217, 255, 0.25);
 		margin-right: 2rem;
+		margin-top: 40px;
 		@media (max-width: 1440px) {
-			padding: 2.8rem 1rem 2.8rem 4rem;
+			padding: 2rem 1rem 2.8rem 4rem;
 		}
 		@media (max-width: 1200px) and (min-width: 991px) {
 			padding: 2.5rem 1rem 2.5rem 2.5rem
@@ -75,7 +80,7 @@
 
 		&:after {
 			left: -1px;
-			border-left: 40px solid #f6f8fe;
+			border-left: 40px solid #3a3a3a;
 			-webkit-filter: drop-shadow(1px 1px 0 rgba(206, 217, 255, 0.25));
 			filter: drop-shadow(1px 1px 0 rgba(206, 217, 255, 0.25));
 		}
@@ -83,7 +88,7 @@
 		&:before {
 			right: -40px;
 			z-index: 1;
-			border-left: 40px solid #fff;
+			border-left: 40px solid #7f1312;
 			-webkit-filter: drop-shadow(1px 1px 1px rgba(206, 217, 255, 0.25));
 			filter: drop-shadow(1px 1px 1px rgba(206, 217, 255, 0.25));
 		}
@@ -91,7 +96,7 @@
 		.title {
 			font-size: 16px;
 			line-height: 20px;
-			color: #001933;
+			color: #ddc06b;
 			font-weight: 700;
 			margin-top: 0.4rem;
 			margin-bottom: 0.5rem;
@@ -101,7 +106,7 @@
 		}
 
 		.number {
-			background-color: #003166;
+			background-color: #322626;
 			color: white;
 			width: 2rem;
 			height: 2rem;
@@ -116,14 +121,14 @@
 }
 
 .link-arrow {
-	color: #66B0FF;
+	color: #ffffff;
 	display: flex;
 	align-items: center;
 	white-space: nowrap;
 
 	&:hover {
 		&:after {
-			border-color: $primary_color;
+			border-color: #dec26f;
 		}
 	}
 
@@ -134,7 +139,7 @@
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
-		border: 1px solid #66B0FF;
+		border: 1px solid #dec26f;
 		border-radius: 50%;
 		margin-left: 0.5rem;
 		font-size: 0.7rem;

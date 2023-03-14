@@ -14,8 +14,8 @@ use yii\bootstrap5\Html;
 ?>
 
 <div class="m-portlet html-widget <?= $full_width ?> <?= $config['setting']['css_class'] ?? '' ?>">
-	<?php if (!empty($data['title'])){
+    <?php if (!empty($data['title'])){
 		echo Html::tag('h4', $data['title'], ['class' => 'm-title']);
 	} ?>
-	<div class="m-content"><?= $data['content'] ?></div>
+    <div class="m-content"><?= $data['content'] ?></div>
 </div>

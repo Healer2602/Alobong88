@@ -18,6 +18,7 @@ body {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	background-color: #3a3a3a;
 }
 
 a {
@@ -29,13 +30,13 @@ a {
 	}
 
 	.default-bg &:hover {
-		color: darken($primary_color, 10%);
+		color: #dbbc69;
 	}
 }
 
 .page {
 	&.customer-page, .bg-grey {
-		background-color: #F6F8FE;
+		background-color: #3a3a3a;
 	}
 
 	&.customer-page {
@@ -47,15 +48,16 @@ a {
 
 header.main {
 	flex-shrink: 0;
-	background: linear-gradient(90deg, #004A99 -24.83%, #007BFF 48.36%, #004A99 120.94%);
+	background: linear-gradient(90deg, #2a2828 -24.83%, #281e1e 48.36%, #2e1e1e 120.94%);
 
 	.navbar {
 		padding: 1rem 0;
 		align-items: center;
 
 		input.form-control {
-			background-color: #0062CC;
-			border-color: #0062CC;
+			background-color: #4c4c4c;
+    		border-color: #292222;
+			color: #ffffff;
 		}
 
 		.navbar-brand {
@@ -706,15 +708,15 @@ main.main {
 
 footer.main {
 	flex-shrink: 0;
-	background-color: #E5EAF9;
+	background-color: #2a2525;
 	padding: 2.5rem 0 2rem;
-	color: #001933;
+	color: #ddc06b;
 
 	.m-title {
 		margin-bottom: 1rem;
 		font-size: 20px;
 		font-weight: bold;
-		color: $footer_heading;
+		color: #ddc06b;
 	}
 
 	ul {
@@ -727,7 +729,7 @@ footer.main {
 
 			a {
 				text-decoration: none;
-				color: $footer_heading;
+				color: #ddc06b;
 
 				&:hover {
 					color: $secondary_color;
